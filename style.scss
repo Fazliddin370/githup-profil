@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 900px;
+    margin: auto;
+}
+.wrapper{
+    max-width: 100%;
+}
+body{
+        background-color: rgb(20,29,47);
+}
+nav{
+    display: flex;
+    padding: 30px 0px;
+    justify-content: space-between;
+    h1{
+        font-family: sans-serif;
+        color: white;
+            font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px
+    }
+    p{
+        font-family: sans-serif;
+        color: white;
+        font-size: 15px;
+    }
+    .darkmod{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        cursor: pointer;
+        gap: 10px;
+    }
+}
+.search{
+    width: 100%;
+        height: 69px;
+        opacity: 1;
+        top: 221px;
+        left: 355px;
+        border-radius: 15px;
+        background: #1E2A47;
+        .kop{
+            display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        button{
+            width: 106px;
+            height: 50px;
+            background: #0079FF;
+            border: 0px solid;
+            border-radius: 10px;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        }
+        .inp{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            input{
+                width: 100%;
+                border: 0px solid;
+                outline: none;
+                background: #1E2A47;
+                color: white;
+                font-size: 23px;
+            }
+        }
+}
+.git{
+    width: 100%;
+    margin-top: 30px;
+    height: 470px;
+    border-radius: 15px;
+    background: #1E2A47;
+    .poto{
+        img{
+            width: 117px;
+            height: 117px;
+            border-radius: 100px;
+        }
+    }
+    .parent{
+        display: flex;
+        gap: 30px;
+        color: white;
+        a{
+            font-size: 20px;
+            transform: translateY(-20px);
+        }
+        p{
+            padding: 10px 0px;
+        }
+        font-family: sans-serif;
+    }
+}
+.git{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 50px;
+}
+.follow{
+    width: 550px;
+    height: 85px;
+    background: #141D2F;
+    border-radius: 10px;
+    color: white;
+    margin-top: 30px;
+    font-family: sans-serif;
+    .ful{
+        display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 17px 30px;
+    }
+}
+.uzb{
+    display: flex;
+    gap: 150px;
+    padding: 25px 0px;
+    .blog{
+        display: flex;
+        gap: 10px;
+        font-size: 18px;
+        color: white;
+        font-family: sans-serif;
+        padding: 10px 0px;
+    }
+}
+a{
+    color: rgba(0, 0, 255, 0.567);
+}
+.liht{
+    display: none;
+    nav{
+        h1{
+            color: #2B3442;
+        }
+        p{
+            color: #697C9A;
+        }
+    }
+    .cold{
+        .search{
+            background: #FEFEFE;
+            box-shadow: 0px 16px 30px -10px #4660BB33;
+        }
+        .inp{
+            input{
+                color: black;
+                background: #FEFEFE;
+            }
+        }
+    }
+    .hot{
+        h1{
+            color: black;
+        }
+        p{
+            color: #4B6A9B;
+        }
+        a{
+            color: #0079FF;
+            p{
+                color: #0079FF;
+            }
+        }
+        .git{
+            background-color: white;
+            box-shadow: 0px 16px 30px -10px #4660BB33;
+        }
+        .follow{
+            background-color: #F6F8FF;
+        }
+    }
+}
+
+@media (max-width: 573px){
+    nav{
+        padding: 20px 20px;
+    }
+    .cold{
+        input{
+            width: 200px;
+            font-size: 10px;
+        }
+        padding: 0px 20px;
+    }
+    .parent{
+        display: block;
+    }
+    .dastur{
+        width: 100%;
+        transform: translateX(-130px);
+    }
+    .home{
+        width: 200px;
+        margin-top: 85px;
+        transform: translateX(-140px);
+    }
+    .foto{
+        transform: translateX(-20px);
+    }
+    .follow{
+        width: 440px;
+        transform: translateX(-130px);
+    }
+    .uzb{
+        display: flex;
+        gap: 50px;
+        transform: translateX(-100px);
+    }
+    .wrapper{
+        overflow: hidden;
+    }
+    .hot{
+        padding: 0px 20px;
+    }
+}
