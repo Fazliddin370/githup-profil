@@ -184,39 +184,56 @@ a{
     }
 }
 
-@media (max-width: 573px){
+@media (max-width: 450px){
     nav{
         padding: 20px 20px;
     }
-    .cold{
-        input{
+    .search{
+        .inp{
+            input{
+                font-size: 15px;
             width: 200px;
-            font-size: 10px;
         }
+        }
+        .kop{
+            button{
+                font-size: 15px;
+                width: 80px;
+            }
+        }
+    }
+    .cold{
         padding: 0px 20px;
     }
     .parent{
         display: block;
     }
     .dastur{
-        width: 100%;
+        margin-top: 25px;
+        width: 240px;
         transform: translateX(-130px);
     }
     .home{
         width: 200px;
         margin-top: 85px;
-        transform: translateX(-140px);
+        font-size: 15px;
+        transform: translateX(-270px);
     }
     .foto{
         transform: translateX(-20px);
     }
     .follow{
-        width: 440px;
+        width: 320px;
         transform: translateX(-130px);
     }
     .uzb{
         display: flex;
-        gap: 50px;
+        gap: 20px;
+        .blog{
+            p{
+                font-size: 15px;
+            }
+        }
         transform: translateX(-100px);
     }
     .wrapper{
@@ -224,5 +241,11 @@ a{
     }
     .hot{
         padding: 0px 20px;
+    }
+    .fazliddin{
+        font-size: 20px;
+    }
+    .git{
+        padding: 20px 30px;
     }
 }
