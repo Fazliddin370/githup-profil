@@ -15,8 +15,6 @@ moder.addEventListener("click", ()=>{
 })
 
 let git = "https://api.github.com/users/"
-let AllData = [];
-
 async function getdata(name){
     const data = await fetch(name)
     return await data.json();
@@ -25,7 +23,6 @@ async function getdata(name){
     let inp = document.querySelector(".inp-open")
     let hot = document.querySelector(".git")
     
-    let days = ['Fab', 'Mar', 'May', 'Avg', 'Yan', 'Sen', 'Okt', 'Iyul', 'Iyun', 'Dec', 'Feb', 'Noy', 'Apr']
 
     btn.onclick = function (){
         if(inp.value.length > 2){
@@ -38,7 +35,7 @@ async function getdata(name){
                     <div class="parent">
                     <div>
                         <h1 class="fazliddin">${e.name}</h1>
-                        <a class="a-herf" href="https://github.com/Fazliddin370"><p>${e.url}</p></a>
+                        <a class="a-herf" href="https://github.com/${e.login}"><p>${e.url}</p></a>
                         <p class="dastur">${e.bio}</p>
                     </div>
                     <div>
