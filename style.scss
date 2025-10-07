@@ -83,8 +83,8 @@ nav{
     background: #1E2A47;
     .poto{
         img{
-            width: 117px;
-            height: 117px;
+            width: 150px;
+            height: 150px;
             border-radius: 100px;
         }
     }
@@ -103,7 +103,7 @@ nav{
     }
 }
 .git{
-    display: flex;
+    display: none;
     justify-content: space-between;
     padding: 60px 50px;
 }
